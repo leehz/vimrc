@@ -7,7 +7,7 @@ fi
 
 # User specific environment and startup programs
 
-PATH=/-/bin:/go/go/bin:$PATH:$HOME/bin
+PATH=/-/bin:/go/go/bin:$PATH:$HOME/bin:/usr/local/heroku/bin
 set HISTFILESIZE=10000
 export PATH
 
@@ -19,3 +19,4 @@ export PATH
 #PS1="\[\033[01;37m\]\$? \$(if [[ \$? == 0 ]]; then echo \"\[\033[01;32m\]:)\"; else echo \"\[\033[01;31m\]:(\"; fi) $(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo '\[\033[01;32m\]\u@\h'; fi)\[\033[01;34m\] \w \$\[\033[00m\] "
 #PS1="\e[01;33m# \e[01;35m\D{%A %e %B %G %R %Z} \e[00;31m\u\e[01;32m@\e[00;31m\h \e[01;33m\w :\e[00m\n\$? \$(if [[ \$? == 0 ]]; then echo \"\[\033[0;32m\]:)\"; else echo \"\[\033[0;31m\]:(\"; fi)\[\033[00m\] \w > "
 PS1="\e[01;33m# \e[01;35m\D{%A %e %B %G %R %Z} \e[00;31m\u\e[01;32m@\e[00;31m\h \e[01;33m\w :\e[00m\n\$? \$(if [[ \$? == 0 ]]; then echo \"\[\033[0;32m\]:)\"; else echo \"\[\033[0;31m\]:(\"; fi)\[\033[00m\] : \[\033[01;37m\]\$? \$(if [[ \$? == 0 ]]; then echo \"\[\033[01;32m\]:)\"; else echo \"\[\033[01;31m\]:(\"; fi) $(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo '\[\033[01;32m\]\u@\h'; fi)\[\033[01;34m\] > \[\033[00m\]"
+alias bower="bower --allow-root"
