@@ -7,7 +7,7 @@ fi
 
 # User specific environment and startup programs
 
-PATH=/-/bin:/go/go/bin:$PATH:$HOME/bin:/usr/local/heroku/bin
+PATH=/-/bin:/go/go/bin:$PATH:$HOME/bin:/usr/local/heroku/bin:/apk/android-sdk-linux/tools
 set HISTFILESIZE=10000
 export PATH
 
