@@ -14,13 +14,26 @@ syntax enable
 set mouse=vc
 set wrap
 set background=light
+"colorscheme primary
 colorscheme solarized
+set t_Co=256
 if has('gui_running')
 "set guifont=Droid\ Sans\ Mono\ 16
 set guifont=Source\ Code\ Pro:h14#
 set background=dark
 let g:airline_theme='solarized'
 endif
+set paste
+set tabstop=4       " The width of a TAB is set to 4.
+                    " Still it is a \t. It is just that
+                    " Vim will interpret it to be having
+                    " a width of 4.
+
+set shiftwidth=4    " Indents will have a width of 4
+
+set softtabstop=4   " Sets the number of columns for a TAB
+
+set expandtab       " Expand TABs to spaces
 " ------------------------------------------------------------------
 
 " The following items are available options, but do not need to be
@@ -31,6 +44,7 @@ endif
 " let g:solarized_underline=1
 " let g:solarized_italic=1
 " let g:solarized_contrast="normal"
+" let g:solarized_contrast="high"
 " let g:solarized_visibility="normal"
 " let g:solarized_diffmode="normal"
 " let g:solarized_hitrail=0
@@ -40,9 +54,9 @@ let mapleader = ';'
 nmap <space> :
 set clipboard=""
 "把空格映射为：
-Bundle 'vim-scripts/taglist.vim'
-Bundle 'vim-scripts/cscope.vim'
-Bundle 'YouCompleteMe'
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set encoding=utf-8
 
 
 " 更新ctags和cscope索引
